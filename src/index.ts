@@ -444,18 +444,3 @@ export function encode(data: any): Buffer {
 export function decode(data: Buffer): any {
   return new MessagePack(data).read()
 }
-
-const v = {
-  a: 1,
-  b: true,
-  x: -Date.now(),
-  r: Date.now(),
-  string: "Azaza",
-  buf: Buffer.from([1, 2, 3])
-}
-
-const m = encode(v)
-
-console.log(v)
-console.log(m)
-console.log(decode(m))
