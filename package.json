@@ -1,0 +1,16 @@
+{
+  "name": "@iamdimka/msgpack",
+  "version": "1.0.0",
+  "description": "Simple schema validation",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "prepare": "tsc"
+  },
+  "author": "iamdimka",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.11.3",
+    "int64-buffer": "^0.1.10"
+  }
+}
